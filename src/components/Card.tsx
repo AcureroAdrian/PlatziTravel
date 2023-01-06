@@ -51,7 +51,7 @@ export const FeaturedCard: FC<CardProps> = ({
   index,
 }): JSX.Element => {
   return (
-    <div className="w-full h-96 bg-chicago bg-cover rounded-xl">
+    <div className="w-full h-96 bg-chicago bg-cover bg-fixed rounded-xl">
       <p className="text-3xl px-8 pt-8 pb-2 font-semibold text-white">
         {title}
       </p>

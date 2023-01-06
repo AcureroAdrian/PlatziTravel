@@ -1,4 +1,4 @@
-import { Home, Navbar, Section, Recommended, RecommendedCard, Featured, FeaturedCard, FAQS, Footer, FAQ, ListItemLink  } from 'components'
+import { Home, Navbar, Section, Recommended, RecommendedCard, Featured, FeaturedCard, FAQS, Footer, FAQ, ListItemLink, Tabbar  } from 'components'
 import './App.css'
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
         <Section>
           <Home />
           <Recommended>
-            <RecommendedCard index={1} title="Norway" description="Paisajes Increibles" />
-            <RecommendedCard index={2} title="New York" description="La gran manzana" />
-            <RecommendedCard index={3} title="Norway" description="Paisajes Increibles" />
+            <RecommendedCard index={1} title='Norway' description='Paisajes Increibles' />
+            <RecommendedCard index={2} title='New York' description='La gran manzana' />
+            <RecommendedCard index={3} title='Norway' description='Paisajes Increibles' />
           </Recommended>
           <Featured>
             <FeaturedCard title='Chicago' description='2 habitaciones, baño y cocina' index={1} />
@@ -52,6 +52,7 @@ function App() {
           <ListItemLink>Términos y condiciones</ListItemLink>
           <ListItemLink>Platzi Travel, Inc.</ListItemLink>
         </Footer>
+        <Tabbar />
     </div>
   )
 }

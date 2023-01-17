@@ -4,9 +4,7 @@ interface CardProps {
   title: string;
   description: string;
   index: number;
-  className?: {
-    [key: string]: string;
-  };
+  className?: string;
 }
 
 function getClassName(index: number) {
@@ -23,7 +21,7 @@ export const RecommendedCard: FC<CardProps> = ({
 }): JSX.Element => {
   return (
     <div
-      className={`w-48 h-64 rounded-lg shadow-md flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl`}
+      className={`w-48 h-64 rounded-lg shadow-md flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl 2xl:w-52 2xl:h-72`}
     >
       <div
         className={`w-full bg-cover rounded-t-lg h-3/5 ${
@@ -51,13 +49,11 @@ export const FeaturedCard: FC<CardProps> = ({
   index,
 }): JSX.Element => {
   return (
-    <div className="w-full h-96 bg-chicago bg-cover bg-fixed rounded-xl">
-      <p className="text-3xl px-8 pt-8 pb-2 font-semibold text-white">
-        {title}
-      </p>
-      <p className="text-sm pl-8 text-white mr-24">
-        {description}
-      </p>
+    <div
+      className={`w-full h-96 bg-chicago bg-cover bg-fixed rounded-xl mb-8 ${className}`}
+    >
+      <p className="text-3xl px-8 pt-8 pb-2 font-semibold">{title}</p>
+      <p className="text-sm pl-8 text-white mr-24 lg:text-lg">{description}</p>
     </div>
   );
 };

@@ -1,15 +1,13 @@
 interface Props {
-    title: string;
-    description: string;
+  title: string;
+  description: string;
 }
 
-export const FAQ: React.FC<Props> = ({title, description}) => {
+export const FAQ: React.FC<Props> = ({ title, description }) => {
   return (
     <div>
       <h4 className="text-xl font-medium text-primary">{title}</h4>
-      <p className="pt-2 ">
-        {description}
-      </p>
+      <p className="pt-2 dark:text-white">{description}</p>
     </div>
   );
 };

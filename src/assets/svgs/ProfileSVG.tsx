@@ -5,7 +5,7 @@ export const ProfileSVG = () => (
       clipRule="evenodd"
       d="M10 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-7 9a7 7 0 1 1 14 0H3Z"
       fill="#3F3F46"
-      className="fill-gray-300"
+      className="fill-gray-300 dark:fill-white"
     />
   </svg>
 );

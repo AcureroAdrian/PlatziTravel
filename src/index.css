@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.Card:nth-child(odd) .BackgroundCard {
+  @apply bg-secondary text-white dark:bg-gray-700;
+}
+
+.Card:nth-child(even) .BackgroundCard {
+  @apply bg-white text-tertiary dark:bg-gray-800 dark:text-gray-300;
 }

@@ -13,3 +13,11 @@ html {
 .Card:nth-child(even) .BackgroundCard {
   @apply bg-white text-tertiary dark:bg-gray-800 dark:text-gray-300;
 }
+
+.Card:nth-child(odd) .CardText {
+  @apply text-white dark:text-tertiary;
+}
+
+.Card:nth-child(even) .CardText {
+  @apply text-tertiary dark:text-white;
+}

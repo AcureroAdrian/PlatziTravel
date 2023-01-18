@@ -4,7 +4,7 @@ export const FAQS: FC<{ children: ReactElement[] | ReactElement }> = ({
   children,
 }): JSX.Element => {
   return (
-    <div className="w-full h-full" id="FAQS">
+    <div className="w-5/6 h-full mb-6 mx-auto" id="FAQS">
       <div className="w-full h-full px-6 flex flex-col space-y-4">
         <h3 className="text-3xl text-primary font-semibold mt-6 dark:text-white">
           FAQS

@@ -8,7 +8,7 @@ export const Recommended: React.FC<Props> = ({ children }) => {
       <h3 className="text-3xl font-semibold text-primary pl-2 mt-4 dark:text-white">
         Recomendados
       </h3>
-      <div className="flex items-center w-auto mt-6 space-x-6 overflow-x-auto overflow-y-hidden h-72 overscroll-x-auto scrollbar-hide">
+      <div className="flex items-center w-auto pt-2 space-x-6 overflow-x-auto overflow-y-hidden h-80 overscroll-x-auto scrollbar-hide lg:scrollbar-default">
         {children}
       </div>
     </div>

@@ -4,7 +4,10 @@ interface Props {
 
 export const Featured = ({ children }: Props) => {
   return (
-    <div className="px-5 h-auto w-full lg:px-7" id="rents">
+    <div
+      className="px-5 h-auto w-full lg:px-7 lg:w-5/6 mx-auto my-9"
+      id="rents"
+    >
       <h3 className="text-3xl text-primary font-semibold p-2 pb-6 dark:text-white">
         Rentas Destacadas
       </h3>
